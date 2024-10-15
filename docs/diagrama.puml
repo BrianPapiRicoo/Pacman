@@ -1,0 +1,85 @@
+@startuml
+class Pacman
+{
++comer
++caminar(movimiento)
+-boca
+}
+class Fantasma
+{
++caminar
++matar
+-ojo
+}
+class Maquina
+{
++encender()
++apagar()
+-palanca
+-boton
+}
+class LocalArcade
+{
++abrir()
++cerrar()
+}
+class Dinero
+class PacmanJuego
+{
+    -Fantasma: _fantasmas_[4]
+}
+class Personaje
+class Mapa
+class Laberinto
+class Color
+class Azul
+class Amarillo
+class Rosa
+class Rojo
+class Fruta
+class BolaGrande
+class PowerUp
+class Dificultad
+class Movimiento
+{
++arriba()
++abajo()
++izquierda()
++derecha()
+}
+class Bolita
+class Consumible
+class Jugador 
+class Nivel
+class Puntuación
+class EstadoFisico
+class EstadoPsicologico
+class CajaDeSonido
+
+Maquina o-- Dinero
+Maquina *--PacmanJuego
+PacmanJuego *--Mapa
+Mapa *-- Laberinto
+Laberinto --|> Nivel
+PacmanJuego *-- Personaje
+Pacman --|> Personaje
+Pacman *-- Consumible
+Fruta --|> Consumible
+Bolita --|> Consumible
+BolaGrande --|> Consumible
+Pacman *-- Color
+Amarillo --|> Color
+Azul --|> Color
+Rojo --|>Color
+Rosa --|> Color
+Fantasma --|> Personaje
+Fantasma *-- Color
+PacmanJuego *-- Fantasma
+LocalArcade *-- Maquina
+Fantasma *-- Movimiento
+BolaGrande --|> PowerUp
+Jugador o-- Pacman
+Nivel *-- Dificultad
+Pacman *-- EstadoFisico
+Fantasma o-- EstadoPsicologico
+@enduml
