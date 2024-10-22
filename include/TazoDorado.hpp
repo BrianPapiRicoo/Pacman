@@ -10,4 +10,8 @@ public:
     void flotar(){
         this -> flotando = true; 
     }
+    bool flotandoo()
+    {
+        return this->flotando;
+    }
 };

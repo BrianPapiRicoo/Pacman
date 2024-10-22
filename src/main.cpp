@@ -3,5 +3,9 @@
 using namespace std; 
 int main()
 {
-    cout << "Imprimir desde c++" << endl; 
+    TazoDorado coqueto; 
+    coqueto.flotar();
+
+    cout << "El coqueto esta flotando?" << endl ;
+    coqueto.flotandoo(); 
 }
