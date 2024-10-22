@@ -8,7 +8,10 @@ El prota tiene que escapar de 4 fantasmas
 - fantasma verde
 - fantasma amarillo 
 ## controles
-
+W ADELANTES
+S ATRAS
+A IZQUIERDA 
+D DERECHA
 ## compilar 
 para compilar el proyecto ejecutar el comando 
  - make run
